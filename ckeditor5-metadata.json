@@ -1,0 +1,41 @@
+{
+	"plugins": [
+		{
+			"name": "DescriptionList",
+			"className": "DescriptionList",
+			"description": "Implements dl, dt and dd list features.",
+			"path": "src/descriptionlist.js",
+			"uiComponents": [
+				{
+					"type": "Button",
+					"name": "descriptionList",
+					"iconPath": "theme/icons/descriptionlist.svg"
+				},
+				{
+					"type": "Button",
+					"name": "descriptionTerm",
+					"iconPath": "theme/icons/descriptionterm.svg"
+				},
+				{
+					"type": "Button",
+					"name": "descriptionValue",
+					"iconPath": "theme/icons/descriptionvalue.svg"
+				}
+			],
+			"htmlOutput": [
+				{
+					"elements": [
+						"dl"
+					]
+				},
+				{
+					"elements": [
+						"dt",
+						"dd"
+					],
+					"implements": "$block"
+				}
+			]
+		}
+	]
+}
